@@ -1,8 +1,21 @@
 FROM python:3.11.9-slim
 
-# Install tesseract
+# Install system dependencies required for Pillow and other packages
 RUN apt-get update && \
-    apt-get install -y tesseract-ocr
+    apt-get install -y tesseract-ocr \
+                       libjpeg-dev \
+                       zlib1g-dev \
+                       libpng-dev \
+                       libtiff5-dev \
+                       libfreetype6-dev \
+                       liblcms2-dev \
+                       libwebp-dev \
+                       tcl8.6-dev \
+                       tk8.6-dev \
+                       python-tk \
+                       libharfbuzz-dev \
+                       libfribidi-dev \
+                       libxcb1-dev
 
 # Set up the working directory
 WORKDIR /app
