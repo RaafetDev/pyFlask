@@ -12,7 +12,7 @@ RUN apt-get update && \
                        libwebp-dev \
                        tcl8.6-dev \
                        tk8.6-dev \
-                       python-tk \
+                       python3-tk \    # updated here
                        libharfbuzz-dev \
                        libfribidi-dev \
                        libxcb1-dev
