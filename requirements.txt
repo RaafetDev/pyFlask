@@ -3,3 +3,4 @@ Werkzeug==2.0.3
 pytesseract==0.3.7
 Pillow==8.2.0
 opencv-python==4.9.0.80
+Flask-Cors==3.0.10
