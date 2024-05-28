@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import pytesseract
 from PIL import Image
 import cv2
@@ -7,6 +8,7 @@ import numpy as np
 from io import BytesIO
 
 app = Flask(__name__)
+CORS(app)
 
 def process_image(base64_str):
     # Decode the base64 string
